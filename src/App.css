@@ -41,6 +41,13 @@
 } */
 /*  base reference for study, no need */
 
+/* utilies */
+.midnight {
+  color: midnightblue;
+}
+
+/* end of utilties */
+
 .cta {
   display: flex;
   justify-content: center;
@@ -61,4 +68,9 @@
     font-weight: 300;
     letter-spacing: 0.3em;
   }
+}
+
+pre {
+  background: #add8e630;
+  border-radius: 8px;
 }
