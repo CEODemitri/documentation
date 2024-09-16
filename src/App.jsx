@@ -32,64 +32,124 @@ function App() {
       </div>
 
       {/* get started */}
-      <div id="start">
+      <div id="start" className="start">
         <h2>Get Started</h2>
 
         {/* quick start */}
-        <h3>Quick Start</h3>
-        <p>
-          Goals:
-          <ul>
-            <li>How to create and nest components</li>
-            <li>How to add markup and styles</li>
-            <li>How to display data</li>
-            <li>How to render conditions and lists</li>
-            <li>How to respond to events and update the screen</li>
-            <li>How to share data between components</li>
-          </ul>
-        </p>
+        <div>
+          <h3>Quick Start</h3>
+          <p>
+            Goals:
+            <ul>
+              <li>How to create and nest components</li>
+              <li>How to add markup and styles</li>
+              <li>How to display data</li>
+              <li>How to render conditions and lists</li>
+              <li>How to respond to events and update the screen</li>
+              <li>How to share data between components</li>
+            </ul>
+          </p>
+        </div>
 
         {/* create and nesting component */}
-        <h4>Create and nesting Components</h4>
-        <section>
-          <p>
-            1. Component is a piece of UI that has own logic and appearance.
-            Small as a button or large as entire page
-          </p>
-          <p>2. Components are Javascript Functions that return markup</p>
-          <p>3. React Components are PascalCase</p>
-          <p>4. export default points to the main component of the file</p>
-          <pre>
-            {`
-              function MyButton() {
-                return (
-                  <button>Click me</button>
-                );
-              }
+        <div>
+          <h4>Create and nesting Components</h4>
+          <section>
+            <p>
+              1. Component is a piece of UI that has own logic and appearance.
+              Small as a button or large as entire page
+            </p>
+            <p>2. Components are Javascript Functions that return markup</p>
+            <p>3. React Components are PascalCase</p>
+            <p>4. export default points to the main component of the file</p>
+            <pre>
+              {`
+                function MyButton() {
+                  return (
+                    <button>Click me</button>
+                  );
+                }
 
-              export default function MyApp() {
-                return (
-                  <div>
-                    <h1>My App</h1>
-                    <MyButton />
-                  </div>
-                )
-              }
-            `}
-          </pre>
-        </section>
+                export default function MyApp() {
+                  return (
+                    <div>
+                      <h1>My App</h1>
+                      <MyButton />
+                    </div>
+                  )
+                }
+              `}
+            </pre>
+          </section>
+        </div>
 
         {/* add markup and styles */}
-        <h4>Writing Markup with JSX</h4>
-        <section>
-          <p>1. JSX is more strict than HTML</p>
-        </section>
+        <div>
+          <h4>Writing Markup with JSX</h4>
+          <section>
+            <p>1. JSX is more strict than HTML</p>
+          </section>
+        </div>
 
         {/* adding styles */}
-        <h4>Adding styles</h4>
-        <section>
-          <p>1. React uses 'className'</p>
-        </section>
+        <div>
+          <h4>Adding styles</h4>
+          <section>
+            <p>1. React uses 'className'</p>
+          </section>
+        </div>
+
+        {/* displaying data */}
+        <div>
+          <h4>Displaying Data</h4>
+          <section>
+            <p>
+              1. JSX - Markup with Javascript
+            </p>
+            <pre>
+              {`
+                return (
+                  <div>
+                    <h1>Hello, {name}</h1>
+                    <p>Welcome to our website!</p>
+                    <img
+                      className="avatar"
+                      src={user.imageUrl}
+                      alt={'Photo of ' + user.name}
+                      style={{
+                        width: user.imageSize,
+                        height: user.imageSize
+                      }}
+                    />
+                  </div>
+                )
+              `}
+            </pre>
+          </section>
+        </div>
+
+        {/* conditional rendering */}
+        <div>
+          <h4>Conditional Rendering</h4>
+          <section>
+            <p>
+              1. No special syntax.
+            </p>
+            <pre>
+              {`
+                <div>
+                  {isLoggedIn ? (
+                    <AdminPanel />
+                  ) : (
+                    <LoginForm />
+                  )}
+                </div>
+              `}
+            </pre>
+          </section>
+        </div>
+
+        
       </div>
 
       {/* learn react */}

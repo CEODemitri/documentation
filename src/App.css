@@ -70,6 +70,16 @@
   }
 }
 
+.start {
+  background: #2cb8e711; 
+  padding: 2em;
+  margin-top: 2em;
+  border-radius: 2.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 1.3em;
+}
+
 pre {
   background: #add8e630;
   border-radius: 8px;
