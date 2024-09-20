@@ -149,6 +149,82 @@ function App() {
           </section>
         </div>
 
+        {/* rendering lists */}
+        <div>
+          <h4>Rendering Lists</h4>
+          <section>
+            <p>
+              1. Use the map() method to iterate over an array and create a new array of elements.
+              2. For each item in a list, use id to uniquely identify each item from siblings.
+            </p>
+            <pre>
+              {`
+                const gemstones = [
+                  {title: 'Tiger Eye', id: 1 },
+                  { title: 'Ruby', id: 2 },
+                  { title: 'Sapphire', id: 3 },
+                ];
+                
+                const listItems = gemstones.msp(gemstone => 
+                  <li key={gemstone.id}>
+                    {gemstone.title}
+                  </li>
+                );
+
+                return (
+                 <ul>
+                    {listItems}
+                  </ul>
+                );
+              `}
+            </pre>
+            {/* example */}
+            <h5>Example</h5>
+            <pre>
+              {`
+                const planets = [
+                  {title: 'Mercury', id: 1},
+                  {title: 'Saturn', id: 2},
+                  {title: 'Pluto', id: 3},
+                ];
+
+                const listItems = planets.map(planet => 
+                  <li key={planet.id}>
+                    {planet.title}
+                  </li>
+                );
+
+                return (
+                 <ul>
+                    {listItems}
+                  </ul>
+                );
+              `}
+            </pre>
+
+            <pre>
+              {`
+                const elements = [
+                  {title: 'Gold', id: 1},
+                  {title: 'Plutonium', id: 2},
+                  {title: 'Uranium', id: 3},
+                ];
+
+                const listItems = elements.map(element =>
+                  <li key={element.id}>
+                    {element.title}
+                  </li>
+                );
+
+                return (
+                 <ul>
+                    {listItems}
+                  </ul>
+                );
+              `}
+            </pre>
+          </section>
+        </div>
         
       </div>
 
