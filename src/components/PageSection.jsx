@@ -1,7 +1,7 @@
-function subSection(title) {
+function PageSection(title) {
     return (
         <div>
-            <h5>{title}</h5>
+            <h2>{title}</h2>
         </div>
     )
 }
