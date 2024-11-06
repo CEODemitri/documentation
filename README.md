@@ -11,4 +11,4 @@ Exploring the deepest sectors of React by diving from square a.
 - [  ] Share data between components
 
 Hesistant to start, thinking of how to best display page. Do I copy React site structure, add each page as a link in navigation bar while creating each as own page.
-** A page is a from the Site at the website above, when press the navigation menu, each item in the menu is  page.
+** A page is a from the Site at the website above, when press the navigation menu, each item in the menu is page.
