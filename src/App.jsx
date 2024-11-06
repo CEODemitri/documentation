@@ -161,8 +161,8 @@ function App() {
               {`
                 const gemstones = [
                   {title: 'Tiger Eye', id: 1 },
-                  { title: 'Ruby', id: 2 },
-                  { title: 'Sapphire', id: 3 },
+                  {title: 'Ruby', id: 2 },
+                  {title: 'Sapphire', id: 3 },
                 ];
                 
                 const listItems = gemstones.msp(gemstone => 
@@ -224,28 +224,32 @@ function App() {
               `}
             </pre>
 
-            <h5>Conditional Added</h5>
-            <pre>
+            <subSection title={"Conditional Added"}>
+              <pre>
               {`
-                const elements = [
-                  {title: 'Gold', id: 1, isMetal: true},
-                  {title: 'Plutonium', id: 2, isMetal: false},
-                  {title: 'Uranium', id: 3, isMetal: true},
-                ];
+                  const elements = [
+                    {title: 'Gold', id: 1, isMetal: true},
+                    {title: 'Plutonium', id: 2, isMetal: false},
+                    {title: 'Uranium', id: 3, isMetal: true},
+                  ];
 
-                const listItems = elements.map(element =>
-                  <li key={element.id}>
-                    {element.title} - {element.isMetal? 'Metal' : 'Non-Metal'}
-                  </li>
-                );
+                  const listItems = elements.map(element =>
+                    <li key={element.id}>
+                      {element.title} - {element.isMetal? 'Metal' : 'Non-Metal'}
+                    </li>
+                  );
 
-                return (
-                 <ul>
-                    {listItems}
-                  </ul>
-                );
-              `}
-            </pre>
+                  return (
+                  <ul>
+                      {listItems}
+                    </ul>
+                  );
+                `}
+              </pre>
+            </subSection>
+
+            {/* show the result of this code */}
+            {/* continue to enhance the subSection component and refactor site */}
           </section>
         </div>
         
